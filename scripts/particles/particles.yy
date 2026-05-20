@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"particles",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"particles",
+  "parent":{
+    "name":"Daydream",
+    "path":"Daydream.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
