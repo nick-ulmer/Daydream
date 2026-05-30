@@ -7,7 +7,7 @@ var cam_width = camera_get_view_width(camera);
 var cam_height = camera_get_view_height(camera);
 
 light_surface = surface_create(cam_width, cam_height);
-darkness_coefficient = .85;
+darkness_coefficient = .2;
 
 //var _panel = new UIPanel("HelloWorld_Panel", 100, 100, 500, 350, green_panel);
 //_panel.setTitle("Hello world!");
@@ -28,17 +28,8 @@ save_room_sprite = function() {
 	gpu_set_ztestenable(false);
 	draw_set_alpha(1);
 	
-	//var _render_surface = light.renderer.GetRenderSurface();
-	//draw_surface(_render_surface,0,0);
-	//gpu_set_tex_filter(false);
-	//draw_surface_stretched(application_surface, 0, 0, _wport, _hport);
-	//gpu_set_tex_filter(true);
-	//draw_surface(application_surface, 0, 0);
-	
-	
 	surface_reset_target();
 	gpu_pop_state()
-	//room_sprite = sprite_create_from_surface(_surface, 0,0, _wport,_hport, false, false, 0, 0);
 	room_sprite = sprite_create_from_surface(application_surface, 0,0, _wport,_hport, false, false, 0, 0);
 	sprite_save(room_sprite, 0, "room_sprite.png")
 	
@@ -91,7 +82,10 @@ pause_exit = function() {
 	}
 }
 
+
+previous_room = room;
 resume_game = function() {
 	pause_exit();
-	room_goto(rm_main);
+	room_goto(previous_room);
+	//room_goto(rm_primary);
 }
