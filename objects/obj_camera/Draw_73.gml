@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-draw_line(x,y, target.x, target.y);
+//draw_line(x,y, target.x, target.y);
 
 /*
 draw_set_color(c_white);

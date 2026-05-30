@@ -2,7 +2,7 @@
 
 switch room {
 	case rm_pause: 
-		pause_menu();
+		//pause_menu();
 	break;
 	default:
 		previous_room = room;

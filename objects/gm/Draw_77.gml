@@ -9,6 +9,4 @@ var _hport = view_get_hport(0);
 
 draw_surface(application_surface, 0, 0);
 
-draw_set_alpha(darkness_coefficient);
-draw_surface_stretched(self.light_surface, 0, 0, window_get_width(), window_get_height());
-draw_set_alpha(1);
+draw_surface_ext(self.light_surface, 0, 0, window_get_width() / surface_get_width(self.light_surface), window_get_height() / surface_get_height(self.light_surface), 0, c_white, darkness_coefficient);

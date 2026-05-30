@@ -85,7 +85,7 @@ pause_exit = function() {
 
 previous_room = room;
 resume_game = function() {
-	pause_exit();
+	//pause_exit();
 	room_goto(previous_room);
 	//room_goto(rm_primary);
 }

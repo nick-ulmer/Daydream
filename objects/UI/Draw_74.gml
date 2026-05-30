@@ -1,1 +1,0 @@
-if (!UI_DISPLAY_AFTER_GUI_END) self.render();

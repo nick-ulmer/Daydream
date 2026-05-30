@@ -7,6 +7,6 @@ switch room {
 	default:
 		save_room_sprite();
 		room_goto(rm_pause);
-		pause_menu();
+		//pause_menu();
 	break;
 }
